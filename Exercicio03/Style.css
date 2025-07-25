@@ -1,0 +1,39 @@
+/* Estilização de seções principais */
+header, main, footer {
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid #ccc;
+}
+
+header {
+  background-color: #f0f8ff;
+  color: #003366;
+}
+
+main {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+footer {
+  background-color: #f8f8f8;
+  color: #666666;
+  text-align: center;
+}
+
+/* Estilo para <h2> */
+h2 {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+/* Classe destaque */
+.destaque {
+  font-style: italic;
+  background-color: #f9f9c5;
+}
+
+/* ID importante */
+#importante {
+  border-top: 4px solid #000;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .item {
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .galeria {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .galeria {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="galeria">
+            <div class="item"><img src="src/Raze.jpg" alt="">
+                <p>Raze</p>
+            </div>
+            <div class="item"><img src="src/Cypher.jpg" alt="">
+                <p>Cypher</p>
+            </div>
+            <div class="item"><img src="src/Neon.jpg" alt="">
+                <p>Neon</p>
+            </div>
+            <div class="item"><img src="src/Viper.jpg" alt="">
+                <p>Viper</p>
+            </div>
+            <div class="item"><img src="src/Reyna.jpg" alt="">
+                <p>Reyna</p>
+            </div>
+            <div class="item"><img src="src/Sage.jpg" alt="">
+                <p>Sage</p>
+            </div>
+            <div class="item"><img src="src/Sova.jpg" alt="">
+                <p>Sova</p>
+            </div>
+            <div class="item"><img src="src/Vyse.jpg" alt="">
+                <p>Vyse</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
